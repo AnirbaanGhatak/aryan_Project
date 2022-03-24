@@ -2,9 +2,9 @@
     <img src="./public/pictures/shopmip.png" alt="shopmip preview">
   </a>
 
-  <h2 align="center">Shopmip | Exquisite Shopping Experience</h2>
+  <h2 align="center">GymBros.... | Exquisite Shopping Experience</h2>
 
-  <p align="center">A complete ecommerce solution for all of your shopping needs!</p>
+  <p align="center">A complete ecommerce solution for all of your gym and gaming needs!</p>
 
   <p align="center">
     <a href="https://shopmip.herokuapp.com/">View Demo</a>

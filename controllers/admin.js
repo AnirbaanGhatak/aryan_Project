@@ -5,6 +5,9 @@ const path = require("path");
 const { cloudinary } = require("../util/cloudinary");
 const streamifier = require("streamifier");
 
+
+// console.log(cloudinary.);
+
 exports.getAddProduct = (req, res, next) => {
   if (!req.session.isLoggedIn) {
     return res.redirect("/login");

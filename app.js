@@ -1,6 +1,6 @@
 require("dotenv").config();
-const { MONGO_ATLAS, MONGO_LOCAL } = process.env;
-const MONGO = MONGO_ATLAS;
+// const { MONGO_ATLAS, MONGO_LOCAL } = process.env;
+const MONGO = 'mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false';
 const path = require("path");
 
 const express = require("express");
@@ -136,7 +136,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(MONGO, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect('mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false', { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
     app.listen(process.env.PORT || 4000);
     console.log("connected to Database");
